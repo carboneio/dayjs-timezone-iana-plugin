@@ -1,0 +1,8 @@
+.git*
+.hg*
+doc/
+0perso/
+test/
+build/
+.DS_Store
+latest.json

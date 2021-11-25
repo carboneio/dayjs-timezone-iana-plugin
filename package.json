@@ -1,0 +1,25 @@
+{
+  "name": "dayjs-timezone-iana-plugin",
+  "version": "1.0.0",
+  "description": "DayJS timezone plugin alternative to manage DST correctly",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test --timeout 100000 --exit",
+    "optimize": "node optimize.js",
+    "testw": "./node_modules/.bin/mocha test --timeout 100000 -w -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carboneio/dayjs-timezone-iana-plugin.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/carboneio/dayjs-timezone-iana-plugin/issues"
+  },
+  "homepage": "https://github.com/carboneio/dayjs-timezone-iana-plugin#readme",
+  "devDependencies": {
+    "mocha": "9.1.3",
+    "dayjs": "1.10.7"
+  }
+}

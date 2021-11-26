@@ -1,6 +1,6 @@
 # Dayjs-timezone-iana-plugin
 
-DayJS timezone plugin alternative to manage DST correctly
+DayJS timezone plugin alternative to manage DST correctly, using https://www.iana.org/time-zones
 
 
 ## Usage

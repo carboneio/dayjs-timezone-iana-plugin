@@ -12,6 +12,7 @@ DayJS timezone plugin alternative to manage DST correctly, using https://www.ian
 In the code:
 
 ```js
+   // -> remove dayjs.extend(timezone)
    dayjs.extend(utc)
    dayjs.extend(require('dayjs-timezone-iana-plugin'))
 

@@ -6,3 +6,4 @@ test/
 build/
 .DS_Store
 latest.json
+optimize.js

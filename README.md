@@ -11,11 +11,11 @@ DayJS timezone plugin alternative to manage DST correctly, using https://www.ian
 
 In the code:
 
-```
-dayjs.extend(utc)
-dayjs.extend(require('dayjs-timezone-iana-plugin'))
+```js
+   dayjs.extend(utc)
+   dayjs.extend(require('dayjs-timezone-iana-plugin'))
 
-dayjs("2014-06-01 12:00").tz("America/New_York")
+   dayjs("2014-06-01 12:00").tz("America/New_York")
 ```
 
 ## How to update IANA DB
@@ -24,3 +24,7 @@ dayjs("2014-06-01 12:00").tz("America/New_York")
 - download `latest.json` https://github.com/moment/moment-timezone/blob/develop/data/unpacked/latest.json
 - execute `npm run optimize`
 - commit, push
+
+## Todo
+
+- [ ] Add lot of tests (see moment-timezone tests)

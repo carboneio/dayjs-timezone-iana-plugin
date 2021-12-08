@@ -1,6 +1,6 @@
 {
   "name": "dayjs-timezone-iana-plugin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "DayJS timezone plugin alternative to manage DST correctly",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/carboneio/dayjs-timezone-iana-plugin.git"
   },
-  "author": "",
+  "author": "David Grelaud",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/carboneio/dayjs-timezone-iana-plugin/issues"

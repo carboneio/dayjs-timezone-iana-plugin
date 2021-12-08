@@ -29,3 +29,6 @@ In the code:
 ## Todo
 
 - [ ] Add lot of tests (see moment-timezone tests)
+
+
+Maintained by https://carbone.io/ and https://www.easilys.com/ 

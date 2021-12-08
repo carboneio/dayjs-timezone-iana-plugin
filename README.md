@@ -16,8 +16,18 @@ In the code:
    dayjs.extend(utc)
    dayjs.extend(require('dayjs-timezone-iana-plugin'))
 
-   dayjs("2014-06-01 12:00").tz("America/New_York")
+   dayjs('2014-06-01 12:00').tz('America/New_York')
+   // You can set a default timezone
+   dayjsFactory.tz.setDefault('America/New_York')
 ```
+
+## Philosophy
+
+The code is quite simple and is largely inspired by moment-timezone.
+
+It includes the latest database IANA 2021e (96KB compressed). 
+It takes more space than the method used by DayJS or Luxon. But it works even if NodeJS is compiled with small-icu.
+
 
 ## How to update IANA DB
 

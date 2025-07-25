@@ -1,6 +1,6 @@
 {
   "name": "dayjs-timezone-iana-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "DayJS timezone plugin alternative to manage DST correctly",
   "main": "index.js",
   "scripts": {

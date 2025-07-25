@@ -40,5 +40,12 @@ It takes more space than the method used by DayJS or Luxon. But it works even if
 
 - [ ] Add lot of tests (see moment-timezone tests)
 
+## Changelog
+
+**0.2.0**
+  - Update iana timezone db (2025)
+
+**0.1.0**
+  - First version
 
 Maintained by https://carbone.io/ and https://www.easilys.com/ 

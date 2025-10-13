@@ -1,17 +1,45 @@
 {
   "name": "dayjs-timezone-iana-plugin",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "DayJS timezone plugin alternative to manage DST correctly",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "iana-db.json",
+    "index.js"
+  ],
   "scripts": {
+    "build": "npm run build:cjs && npm run build:esm && npm run build:compat",
+    "build:cjs": "tsc -p tsconfig.json",
+    "build:esm": "tsc -p tsconfig.esm.json && node scripts/fix-esm.js",
+    "build:compat": "node scripts/create-compat.js",
+    "prepublishOnly": "npm run build",
     "test": "./node_modules/.bin/mocha test --timeout 100000 --exit",
-    "optimize": "node optimize.js",
+    "optimize": "node scripts/optimize.js",
     "testw": "./node_modules/.bin/mocha test --timeout 100000 -w -b"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carboneio/dayjs-timezone-iana-plugin.git"
   },
+  "keywords": [
+    "dayjs",
+    "timezone",
+    "iana",
+    "dst",
+    "plugin",
+    "typescript"
+  ],
   "author": "David Grelaud",
   "license": "Apache-2.0",
   "bugs": {
@@ -19,7 +47,12 @@
   },
   "homepage": "https://github.com/carboneio/dayjs-timezone-iana-plugin#readme",
   "devDependencies": {
-    "mocha": "9.1.3",
-    "dayjs": "1.10.7"
+    "@types/node": "^20.19.21",
+    "dayjs": "1.10.7",
+    "mocha": "^11.7.4",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "dayjs": "^1.10.0"
   }
 }
